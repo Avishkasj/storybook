@@ -10,6 +10,14 @@ class welcome extends StatefulWidget {
 class _welcomeState extends State<welcome> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: [
+            Text("data"),
+          ],
+        ),
+      ),
+    );
   }
 }
