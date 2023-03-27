@@ -22,6 +22,7 @@ class _welcomeState extends State<welcome> {
             ),
           ),
           Container(
+            width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
@@ -30,11 +31,12 @@ class _welcomeState extends State<welcome> {
               ),
             ),
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
                   "data",
                   style: TextStyle(
-                    fontSize: 200,
                     color: Colors.white,
                   ),
                 ),
