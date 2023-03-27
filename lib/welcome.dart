@@ -30,17 +30,33 @@ class _welcomeState extends State<welcome> {
                 colors: [Colors.transparent, Colors.black.withOpacity(0.8)],
               ),
             ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  "data",
-                  style: TextStyle(
-                    color: Colors.white,
+            child: SafeArea(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  // Text(
+                  //   "data",
+                  //   style: TextStyle(
+                  //     color: Colors.white,
+                  //   ),
+                  // ),
+
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 30),
+                    child: OutlinedButton(
+                      child: Text("Next"),
+                      style: OutlinedButton.styleFrom(
+                        primary: Colors.white,
+                        side: BorderSide(
+                          color: Colors.green,
+                        ),
+                      ),
+                      onPressed: () {},
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],
