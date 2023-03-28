@@ -10,11 +10,11 @@ class _dashboardState extends State<dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(97, 119, 107, 1),
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0.0,
-        title: Text('Transparent App Bar'),
+        title: Text('r'),
       ),
       drawer: Drawer(
         child: ListView(
@@ -22,7 +22,7 @@ class _dashboardState extends State<dashboard> {
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.black,
               ),
               child: Text(
                 'Menu',
@@ -50,27 +50,40 @@ class _dashboardState extends State<dashboard> {
         ),
       ),
 
-      body: Container(
-        child: Column(
-          children: [
-            //main image
-            Container(
-
+      body: Stack(
+        children: [
+          Container(
+            height: 200,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage('assets/img2.png'),
+                fit: BoxFit.cover,
+              ),
             ),
+          ),
 
-            //filter
-            Container(
-
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Colors.transparent, Colors.black.withOpacity(0.8)],
+              ),
             ),
+            child: SafeArea(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
 
-            //cards
-            Container(
 
+
+                ],
+              ),
             ),
-
-
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
