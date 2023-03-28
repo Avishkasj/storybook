@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:storybook/dashboard.dart';
 
 class welcome extends StatefulWidget {
   const welcome({Key? key}) : super(key: key);
@@ -52,7 +53,10 @@ class _welcomeState extends State<welcome> {
                           color: Colors.green,
                         ),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => dashboard()));
+                      },
                     ),
                   ),
 

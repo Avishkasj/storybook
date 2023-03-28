@@ -9,6 +9,14 @@ class dashboard extends StatefulWidget {
 class _dashboardState extends State<dashboard> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Container(
+        child: Column(
+          children: [
+
+          ],
+        ),
+      ),
+    );
   }
 }
