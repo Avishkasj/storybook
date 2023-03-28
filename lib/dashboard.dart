@@ -53,6 +53,21 @@ class _dashboardState extends State<dashboard> {
       body: Container(
         child: Column(
           children: [
+            //main image
+            Container(
+
+            ),
+
+            //filter
+            Container(
+
+            ),
+
+            //cards
+            Container(
+
+            ),
+
 
           ],
         ),
