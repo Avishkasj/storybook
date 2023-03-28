@@ -55,6 +55,7 @@ class _welcomeState extends State<welcome> {
                       onPressed: () {},
                     ),
                   ),
+
                 ],
               ),
             ),
