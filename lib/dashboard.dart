@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class dashboard extends StatefulWidget {
   const dashboard({Key? key}) : super(key: key);
 
@@ -49,7 +50,6 @@ class _dashboardState extends State<dashboard> {
           ],
         ),
       ),
-
       body: Stack(
         children: [
           Container(
@@ -61,7 +61,6 @@ class _dashboardState extends State<dashboard> {
               ),
             ),
           ),
-
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
@@ -72,14 +71,176 @@ class _dashboardState extends State<dashboard> {
               ),
             ),
             child: SafeArea(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+              child: SingleChildScrollView(
+                child: Column(
+                  // crossAxisAlignment: CrossAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Column(
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 150, 10, 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Card(
+                                      margin: EdgeInsets.zero,
+                                      elevation: 0,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30.0),
+                                        child: Container(
+                                          height: 200,
+                                          width: double.infinity,
+                                          child: Center(
+                                            child: Text('My Card'),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+
+                                Flexible(
+                                  child: Card(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                      child: Container(
+                                        height: 200,
+                                        width: double.infinity,
+                                        child: Center(
+                                          child: Text('My Card'),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
 
 
 
-                ],
+                    //row 2
+
+                    Column(
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Card(
+                                      margin: EdgeInsets.zero,
+                                      elevation: 0,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30.0),
+                                        child: Container(
+                                          height: 200,
+                                          width: double.infinity,
+                                          child: Center(
+                                            child: Text('My Card'),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+
+                                Flexible(
+                                  child: Card(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                      child: Container(
+                                        height: 200,
+                                        width: double.infinity,
+                                        child: Center(
+                                          child: Text('My Card'),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+
+
+                    //row 3
+                    //row 2
+
+                    Column(
+                      children: [
+                        Center(
+                          child: Padding(
+                            padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Flexible(
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Card(
+                                      margin: EdgeInsets.zero,
+                                      elevation: 0,
+                                      child: ClipRRect(
+                                        borderRadius: BorderRadius.circular(30.0),
+                                        child: Container(
+                                          height: 200,
+                                          width: double.infinity,
+                                          child: Center(
+                                            child: Text('My Card'),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+
+                                Flexible(
+                                  child: Card(
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(15.0),
+                                      child: Container(
+                                        height: 200,
+                                        width: double.infinity,
+                                        child: Center(
+                                          child: Text('My Card'),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                              ],
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+
+
+                    Column(),
+                  ],
+                ),
               ),
             ),
           ),
