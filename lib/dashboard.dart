@@ -51,6 +51,7 @@ class _dashboardState extends State<dashboard> {
           ],
         ),
       ),
+
       body: Stack(
         children: [
           Container(
@@ -62,6 +63,149 @@ class _dashboardState extends State<dashboard> {
               ),
             ),
           ),
+
+          Padding(
+            padding: const EdgeInsets.only(top: 200),
+            child: Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 30),
+                      child: OutlinedButton(
+                        child: Text("Next"),
+                        style: OutlinedButton.styleFrom(
+                          primary: Colors.black,
+                          side: BorderSide(
+                            color: Colors.green,
+                          ),
+                        ),
+                        onPressed: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => dashboard()));
+                        },
+                      ),
+                    ),
+
+
+
+
+                  ],
+                ),
+              ),
+
+            ),
+          ),
+
           Container(
             width: double.infinity,
             decoration: BoxDecoration(
@@ -71,9 +215,12 @@ class _dashboardState extends State<dashboard> {
                 colors: [Colors.transparent, Colors.black.withOpacity(0.8)],
               ),
             ),
+
+
+
             child: SafeArea(
               child:  Transform.translate(
-                offset: Offset(0, 100),
+                offset: Offset(0, 170),
                 child: SingleChildScrollView(
                   child: Column(
                     // crossAxisAlignment: CrossAxisAlignment.center,
@@ -81,20 +228,38 @@ class _dashboardState extends State<dashboard> {
                     children: [
                       Column(
                         children: [
-                          Center(
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(10, 50, 10, 0),
-                              child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(4.0),
+                          Container(
+                            child: Center(
+                              child: Padding(
+                                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Flexible(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(4.0),
+                                        child: Card(
+                                          margin: EdgeInsets.zero,
+                                          elevation: 0,
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(30.0),
+                                            child: Container(
+                                              height: 200,
+                                              width: double.infinity,
+                                              child: Center(
+                                                child: Text('My Card'),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+
+
+                                    Flexible(
                                       child: Card(
-                                        margin: EdgeInsets.zero,
-                                        elevation: 0,
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(30.0),
+                                          borderRadius: BorderRadius.circular(15.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -105,25 +270,9 @@ class _dashboardState extends State<dashboard> {
                                         ),
                                       ),
                                     ),
-                                  ),
 
-
-                                  Flexible(
-                                    child: Card(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(15.0),
-                                        child: Container(
-                                          height: 200,
-                                          width: double.infinity,
-                                          child: Center(
-                                            child: Text('My Card'),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           )
