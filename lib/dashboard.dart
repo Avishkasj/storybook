@@ -70,6 +70,7 @@ class _dashboardState extends State<dashboard> {
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
 
                     Padding(
@@ -313,19 +314,26 @@ class _dashboardState extends State<dashboard> {
 
 
                                   Flexible(
-                                    child: Card(
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(15.0),
-                                        child: Container(
-                                          height: 200,
-                                          width: double.infinity,
-                                          child: Center(
-                                            child: Text('My Card'),
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        // Handle the onTap event here
+                                        print('Card tapped');
+                                      },
+                                      child: Card(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(15.0),
+                                          child: Container(
+                                            height: 200,
+                                            width: double.infinity,
+                                            child: Center(
+                                              child: Text('My Card'),
+                                            ),
                                           ),
                                         ),
                                       ),
                                     ),
                                   ),
+
 
                                 ],
                               ),
