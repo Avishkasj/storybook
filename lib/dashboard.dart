@@ -84,8 +84,7 @@ class _dashboardState extends State<dashboard> {
                           ),
                         ),
                         onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
+                              print("clicked");
                         },
                       ),
                     ),
