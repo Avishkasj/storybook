@@ -55,7 +55,7 @@ class _dashboardState extends State<dashboard> {
       body: Stack(
         children: [
           Container(
-            height: 200,
+            height: 220,
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/img2.png'),
