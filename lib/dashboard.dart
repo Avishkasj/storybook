@@ -245,7 +245,7 @@ class _dashboardState extends State<dashboard> {
 
             child: SafeArea(
               child:  Transform.translate(
-                offset: Offset(0, 130),
+                offset: Offset(0, 140),
                 child: SingleChildScrollView(
                   child: Column(
                     // crossAxisAlignment: CrossAxisAlignment.center,
