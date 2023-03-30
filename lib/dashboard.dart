@@ -65,6 +65,29 @@ class _dashboardState extends State<dashboard> {
             ),
           ),
 
+
+          Padding(
+            padding: const EdgeInsets.fromLTRB(0, 180, 0, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
+                  Icons.book_sharp,
+                  color: Colors.white,
+                  size: 24.0,
+                  semanticLabel: 'Text to announce in accessibility modes',
+                ),
+                Container(
+                  child: Text("BOOK",
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),),
+                ),
+              ],
+            ),
+          ),
+
           // Padding(
           //   padding: const EdgeInsets.only(top: 200),
           //   child: Container(
