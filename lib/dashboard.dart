@@ -11,6 +11,7 @@ class _dashboardState extends State<dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromRGBO(47, 114, 100, 1),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -24,7 +25,7 @@ class _dashboardState extends State<dashboard> {
           children: <Widget>[
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color.fromRGBO(47, 114, 100, 1),
               ),
               child: Text(
                 'Menu',
@@ -232,7 +233,7 @@ class _dashboardState extends State<dashboard> {
                           Container(
                             child: Center(
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
@@ -240,15 +241,25 @@ class _dashboardState extends State<dashboard> {
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
+                                          color: Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
                                             borderRadius: BorderRadius.circular(30.0),
-                                            child: Container(
-                                              height: 200,
-                                              width: double.infinity,
-                                              child: Center(
-                                                child: Text('My Card'),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Container(
+                                                height: 200,
+                                                width: double.infinity,
+                                                decoration: BoxDecoration(
+                                                  image: DecorationImage(
+                                                    image: AssetImage('assets/img1.png'),
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                                child: Center(
+                                                  child: Text('My Card'),
+                                                ),
                                               ),
                                             ),
                                           ),
@@ -257,15 +268,31 @@ class _dashboardState extends State<dashboard> {
                                     ),
 
 
+
                                     Flexible(
-                                      child: Card(
-                                        child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(15.0),
-                                          child: Container(
-                                            height: 200,
-                                            width: double.infinity,
-                                            child: Center(
-                                              child: Text('My Card'),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(4.0),
+                                        child: Card(
+                                          color: Color.fromARGB(190, 134, 108, 1),
+                                          margin: EdgeInsets.zero,
+                                          elevation: 0,
+                                          child: ClipRRect(
+                                            borderRadius: BorderRadius.circular(30.0),
+                                            child: Padding(
+                                              padding: const EdgeInsets.all(8.0),
+                                              child: Container(
+                                                height: 200,
+                                                width: double.infinity,
+                                                decoration: BoxDecoration(
+                                                  image: DecorationImage(
+                                                    image: AssetImage('assets/img1.png'),
+                                                    fit: BoxFit.cover,
+                                                  ),
+                                                ),
+                                                child: Center(
+                                                  child: Text('My Card'),
+                                                ),
+                                              ),
                                             ),
                                           ),
                                         ),
