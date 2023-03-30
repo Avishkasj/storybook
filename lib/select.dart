@@ -9,6 +9,12 @@ class select extends StatefulWidget {
 class _selectState extends State<select> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Column(
+        children: [
+          Text("data"),
+        ],
+      ),
+    );
   }
 }
