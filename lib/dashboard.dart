@@ -64,147 +64,147 @@ class _dashboardState extends State<dashboard> {
             ),
           ),
 
-          Padding(
-            padding: const EdgeInsets.only(top: 200),
-            child: Container(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                              print("clicked");
-                        },
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-
-
-                  ],
-                ),
-              ),
-
-            ),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.only(top: 200),
+          //   child: Container(
+          //     child: SingleChildScrollView(
+          //       scrollDirection: Axis.horizontal,
+          //       child: Row(
+          //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          //         children: [
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                     print("clicked");
+          //               },
+          //             ),
+          //           ),
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                 Navigator.push(context,
+          //                     MaterialPageRoute(builder: (context) => dashboard()));
+          //               },
+          //             ),
+          //           ),
+          //
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                 Navigator.push(context,
+          //                     MaterialPageRoute(builder: (context) => dashboard()));
+          //               },
+          //             ),
+          //           ),
+          //
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                 Navigator.push(context,
+          //                     MaterialPageRoute(builder: (context) => dashboard()));
+          //               },
+          //             ),
+          //           ),
+          //
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                 Navigator.push(context,
+          //                     MaterialPageRoute(builder: (context) => dashboard()));
+          //               },
+          //             ),
+          //           ),
+          //
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                 Navigator.push(context,
+          //                     MaterialPageRoute(builder: (context) => dashboard()));
+          //               },
+          //             ),
+          //           ),
+          //
+          //
+          //           Padding(
+          //             padding: const EdgeInsets.only(bottom: 30),
+          //             child: OutlinedButton(
+          //               child: Text("Next"),
+          //               style: OutlinedButton.styleFrom(
+          //                 primary: Colors.black,
+          //                 side: BorderSide(
+          //                   color: Colors.green,
+          //                 ),
+          //               ),
+          //               onPressed: () {
+          //                 Navigator.push(context,
+          //                     MaterialPageRoute(builder: (context) => dashboard()));
+          //               },
+          //             ),
+          //           ),
+          //
+          //
+          //
+          //
+          //         ],
+          //       ),
+          //     ),
+          //
+          //   ),
+          // ),
 
           Container(
             width: double.infinity,
@@ -221,7 +221,7 @@ class _dashboardState extends State<dashboard> {
 
             child: SafeArea(
               child:  Transform.translate(
-                offset: Offset(0, 170),
+                offset: Offset(0, 130),
                 child: SingleChildScrollView(
                   child: Column(
                     // crossAxisAlignment: CrossAxisAlignment.center,
@@ -232,7 +232,7 @@ class _dashboardState extends State<dashboard> {
                           Container(
                             child: Center(
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                                padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
