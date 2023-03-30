@@ -64,147 +64,6 @@ class _dashboardState extends State<dashboard> {
             ),
           ),
 
-          Padding(
-            padding: const EdgeInsets.only(top: 200),
-            child: Container(
-              child: SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                              print("clicked");
-                        },
-                      ),
-                    ),
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.only(bottom: 30),
-                      child: OutlinedButton(
-                        child: Text("Next"),
-                        style: OutlinedButton.styleFrom(
-                          primary: Colors.black,
-                          side: BorderSide(
-                            color: Colors.green,
-                          ),
-                        ),
-                        onPressed: () {
-                          Navigator.push(context,
-                              MaterialPageRoute(builder: (context) => dashboard()));
-                        },
-                      ),
-                    ),
-
-
-
-
-                  ],
-                ),
-              ),
-
-            ),
-          ),
 
           Container(
             width: double.infinity,
@@ -218,6 +77,8 @@ class _dashboardState extends State<dashboard> {
 
 
 
+
+
             child: SafeArea(
               child:  Transform.translate(
                 offset: Offset(0, 170),
@@ -226,6 +87,147 @@ class _dashboardState extends State<dashboard> {
                     // crossAxisAlignment: CrossAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 0),
+                        child: Container(
+                          child: SingleChildScrollView(
+                            scrollDirection: Axis.horizontal,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      print("clicked");
+                                    },
+                                  ),
+                                ),
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => dashboard()));
+                                    },
+                                  ),
+                                ),
+
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => dashboard()));
+                                    },
+                                  ),
+                                ),
+
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => dashboard()));
+                                    },
+                                  ),
+                                ),
+
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => dashboard()));
+                                    },
+                                  ),
+                                ),
+
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => dashboard()));
+                                    },
+                                  ),
+                                ),
+
+
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 30),
+                                  child: OutlinedButton(
+                                    child: Text("Next"),
+                                    style: OutlinedButton.styleFrom(
+                                      primary: Colors.black,
+                                      side: BorderSide(
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    onPressed: () {
+                                      Navigator.push(context,
+                                          MaterialPageRoute(builder: (context) => dashboard()));
+                                    },
+                                  ),
+                                ),
+
+
+
+
+                              ],
+                            ),
+                          ),
+
+                        ),
+                      ),
                       Column(
                         children: [
                           Container(
