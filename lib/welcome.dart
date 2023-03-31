@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:storybook/dashboard.dart';
-import 'package:storybook/select.dart';
 
 class welcome extends StatefulWidget {
   const welcome({Key? key}) : super(key: key);
@@ -57,24 +56,6 @@ class _welcomeState extends State<welcome> {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => dashboard()));
-                      },
-                    ),
-                  ),
-
-
-                  Padding(
-                    padding: const EdgeInsets.only(bottom: 30),
-                    child: OutlinedButton(
-                      child: Text("Next 2"),
-                      style: OutlinedButton.styleFrom(
-                        primary: Colors.white,
-                        side: BorderSide(
-                          color: Colors.green,
-                        ),
-                      ),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => select()));
                       },
                     ),
                   ),
