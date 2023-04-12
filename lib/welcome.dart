@@ -54,12 +54,13 @@ class _welcomeState extends State<welcome> {
                         ),
                       ),
                       onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => dashboard()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => dashboard()));
                       },
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -69,4 +70,3 @@ class _welcomeState extends State<welcome> {
     );
   }
 }
-
