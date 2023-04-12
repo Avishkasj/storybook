@@ -18,7 +18,6 @@ class _dashboardState extends State<dashboard> {
         elevation: 0.0,
         title: Text('r'),
       ),
-
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -52,7 +51,6 @@ class _dashboardState extends State<dashboard> {
           ],
         ),
       ),
-
       body: Stack(
         children: [
           Container(
@@ -64,7 +62,6 @@ class _dashboardState extends State<dashboard> {
               ),
             ),
           ),
-
 
           Padding(
             padding: const EdgeInsets.fromLTRB(0, 180, 0, 0),
@@ -78,11 +75,13 @@ class _dashboardState extends State<dashboard> {
                   semanticLabel: 'Text to announce in accessibility modes',
                 ),
                 Container(
-                  child: Text("BOOK",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                  ),),
+                  child: Text(
+                    "BOOK",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
                 ),
               ],
             ),
@@ -239,12 +238,8 @@ class _dashboardState extends State<dashboard> {
                 colors: [Colors.transparent, Colors.black.withOpacity(0.8)],
               ),
             ),
-
-
-
-
             child: SafeArea(
-              child:  Transform.translate(
+              child: Transform.translate(
                 offset: Offset(0, 140),
                 child: SingleChildScrollView(
                   child: Column(
@@ -256,27 +251,33 @@ class _dashboardState extends State<dashboard> {
                           Container(
                             child: Center(
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 20, 10, 0),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
-                                          color: Color.fromARGB(190, 134, 108, 1),
+                                          color:
+                                              Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
-                                            borderRadius: BorderRadius.circular(30.0),
+                                            borderRadius:
+                                                BorderRadius.circular(30.0),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
                                               child: Container(
                                                 height: 200,
                                                 width: double.infinity,
                                                 decoration: BoxDecoration(
                                                   image: DecorationImage(
-                                                    image: AssetImage('assets/img1.png'),
+                                                    image: AssetImage(
+                                                        'assets/img1.png'),
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -289,26 +290,27 @@ class _dashboardState extends State<dashboard> {
                                         ),
                                       ),
                                     ),
-
-
-
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
-                                          color: Color.fromARGB(190, 134, 108, 1),
+                                          color:
+                                              Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
-                                            borderRadius: BorderRadius.circular(30.0),
+                                            borderRadius:
+                                                BorderRadius.circular(30.0),
                                             child: Padding(
-                                              padding: const EdgeInsets.all(8.0),
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
                                               child: Container(
                                                 height: 200,
                                                 width: double.infinity,
                                                 decoration: BoxDecoration(
                                                   image: DecorationImage(
-                                                    image: AssetImage('assets/img1.png'),
+                                                    image: AssetImage(
+                                                        'assets/img1.png'),
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
@@ -321,7 +323,6 @@ class _dashboardState extends State<dashboard> {
                                         ),
                                       ),
                                     ),
-
                                   ],
                                 ),
                               ),
@@ -329,8 +330,6 @@ class _dashboardState extends State<dashboard> {
                           )
                         ],
                       ),
-
-
 
                       //row 2
 
@@ -340,7 +339,8 @@ class _dashboardState extends State<dashboard> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Padding(
@@ -349,7 +349,8 @@ class _dashboardState extends State<dashboard> {
                                         margin: EdgeInsets.zero,
                                         elevation: 0,
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(30.0),
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -361,8 +362,6 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
-
                                   Flexible(
                                     child: GestureDetector(
                                       onTap: () {
@@ -371,7 +370,8 @@ class _dashboardState extends State<dashboard> {
                                       },
                                       child: Card(
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(15.0),
+                                          borderRadius:
+                                              BorderRadius.circular(15.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -383,8 +383,6 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
-
                                 ],
                               ),
                             ),
@@ -392,9 +390,7 @@ class _dashboardState extends State<dashboard> {
                         ],
                       ),
 
-
                       //row 3
-
 
                       Column(
                         children: [
@@ -402,7 +398,8 @@ class _dashboardState extends State<dashboard> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Padding(
@@ -411,7 +408,8 @@ class _dashboardState extends State<dashboard> {
                                         margin: EdgeInsets.zero,
                                         elevation: 0,
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(30.0),
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -423,12 +421,11 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
-
                                   Flexible(
                                     child: Card(
                                       child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(15.0),
+                                        borderRadius:
+                                            BorderRadius.circular(15.0),
                                         child: Container(
                                           height: 200,
                                           width: double.infinity,
@@ -445,8 +442,6 @@ class _dashboardState extends State<dashboard> {
                           )
                         ],
                       ),
-
-
 
                       //row 4
 
@@ -456,7 +451,8 @@ class _dashboardState extends State<dashboard> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Padding(
@@ -465,7 +461,8 @@ class _dashboardState extends State<dashboard> {
                                         margin: EdgeInsets.zero,
                                         elevation: 0,
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(30.0),
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -477,12 +474,11 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
-
                                   Flexible(
                                     child: Card(
                                       child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(15.0),
+                                        borderRadius:
+                                            BorderRadius.circular(15.0),
                                         child: Container(
                                           height: 200,
                                           width: double.infinity,
@@ -493,14 +489,12 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
                                 ],
                               ),
                             ),
                           )
                         ],
                       ),
-
 
                       //row 5
 
@@ -510,7 +504,8 @@ class _dashboardState extends State<dashboard> {
                             child: Padding(
                               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Padding(
@@ -519,7 +514,8 @@ class _dashboardState extends State<dashboard> {
                                         margin: EdgeInsets.zero,
                                         elevation: 0,
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.circular(30.0),
+                                          borderRadius:
+                                              BorderRadius.circular(30.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -531,12 +527,11 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
-
                                   Flexible(
                                     child: Card(
                                       child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(15.0),
+                                        borderRadius:
+                                            BorderRadius.circular(15.0),
                                         child: Container(
                                           height: 200,
                                           width: double.infinity,
@@ -547,14 +542,12 @@ class _dashboardState extends State<dashboard> {
                                       ),
                                     ),
                                   ),
-
                                 ],
                               ),
                             ),
                           )
                         ],
                       ),
-
 
                       Column(),
                     ],
@@ -568,4 +561,3 @@ class _dashboardState extends State<dashboard> {
     );
   }
 }
-
