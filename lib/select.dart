@@ -9,9 +9,6 @@ class select extends StatefulWidget {
 class _selectState extends State<select> {
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-    return const Placeholder();
-=======
     return Scaffold(
       body: Column(
         children: [
@@ -19,6 +16,5 @@ class _selectState extends State<select> {
         ],
       ),
     );
->>>>>>> parent of 88b184f (books and audio select)
   }
 }
