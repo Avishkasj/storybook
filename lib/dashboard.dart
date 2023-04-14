@@ -329,6 +329,8 @@ class _dashboardState extends State<dashboard> {
                             ),
                           )
                         ],
+
+                        
                       ),
 
                       //row 2
