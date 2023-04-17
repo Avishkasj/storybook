@@ -282,7 +282,7 @@ class _dashboardState extends State<dashboard> {
                                                   ),
                                                 ),
                                                 child: Center(
-                                                  child: Text('My Card'),
+                                                  child: Text('card 1'),
                                                 ),
                                               ),
                                             ),
