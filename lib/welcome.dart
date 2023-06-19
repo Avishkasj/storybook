@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:storybook/dashboard.dart';
 
-class welcome extends StatefulWidget {
-  const welcome({Key? key}) : super(key: key);
+class Welcome extends StatefulWidget {
+  const Welcome({Key? key}) : super(key: key);
 
   @override
-  State<welcome> createState() => _welcomeState();
+  State<Welcome> createState() => _WelcomeState();
 }
 
-class _welcomeState extends State<welcome> {
+class _WelcomeState extends State<Welcome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,22 +45,34 @@ class _welcomeState extends State<welcome> {
 
                   Padding(
                     padding: const EdgeInsets.only(bottom: 30),
-                    child: OutlinedButton(
-                      child: Text("Next"),
-                      style: OutlinedButton.styleFrom(
-                        primary: Colors.white,
-                        side: BorderSide(
-                          color: Colors.green,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.green,
+                        elevation: 3,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 40,
+                          vertical: 15,
                         ),
                       ),
                       onPressed: () {
                         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => dashboard()));
+                          context,
+                          MaterialPageRoute(builder: (context) => dashboard()),
+                        );
                       },
+                      child: Text(
+                        'Next',
+                        style: TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
+
                 ],
               ),
             ),
