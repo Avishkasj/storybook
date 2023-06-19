@@ -138,9 +138,11 @@ class _dashboardState extends State<dashboard> {
                           Container(
                             child: Center(
                               child: Padding(
-                                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                                padding:
+                                    const EdgeInsets.fromLTRB(10, 10, 10, 0),
                                 child: Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Flexible(
                                       child: Padding(
@@ -149,7 +151,8 @@ class _dashboardState extends State<dashboard> {
                                           color: Colors.white,
                                           elevation: 0,
                                           shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(10),
+                                            borderRadius:
+                                                BorderRadius.circular(10),
                                           ),
                                           child: Padding(
                                             padding: const EdgeInsets.all(10.0),
@@ -157,7 +160,8 @@ class _dashboardState extends State<dashboard> {
                                               children: [
                                                 Icon(
                                                   Icons.star_border_outlined,
-                                                  color: Color.fromRGBO(41, 89, 69, 1),
+                                                  color: Color.fromRGBO(
+                                                      41, 89, 69, 1),
                                                   size: 40.0,
                                                 ),
                                                 Text(
@@ -165,7 +169,8 @@ class _dashboardState extends State<dashboard> {
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
-                                                    color: Color.fromRGBO(41, 89, 69, 1),
+                                                    color: Color.fromRGBO(
+                                                        41, 89, 69, 1),
                                                   ),
                                                 ),
                                               ],
@@ -181,23 +186,26 @@ class _dashboardState extends State<dashboard> {
                                           color: Colors.white,
                                           elevation: 0,
                                           shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(10),
+                                            borderRadius:
+                                                BorderRadius.circular(10),
                                           ),
                                           child: Padding(
                                             padding: const EdgeInsets.all(10.0),
                                             child: Column(
                                               children: [
                                                 Icon(
-                                                  Icons.history,
-                                                  color: Color.fromRGBO(41, 89, 69, 1),
+                                                  Icons.audiotrack,
+                                                  color: Color.fromRGBO(
+                                                      41, 89, 69, 1),
                                                   size: 40.0,
                                                 ),
                                                 Text(
-                                                  'History',
+                                                  '  Audio  ',
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
-                                                    color: Color.fromRGBO(41, 89, 69, 1),
+                                                    color: Color.fromRGBO(
+                                                        41, 89, 69, 1),
                                                   ),
                                                 ),
                                               ],
@@ -206,8 +214,6 @@ class _dashboardState extends State<dashboard> {
                                         ),
                                       ),
                                     ),
-
-
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(8.0),
@@ -215,7 +221,8 @@ class _dashboardState extends State<dashboard> {
                                           color: Colors.white,
                                           elevation: 0,
                                           shape: RoundedRectangleBorder(
-                                            borderRadius: BorderRadius.circular(10),
+                                            borderRadius:
+                                                BorderRadius.circular(10),
                                           ),
                                           child: Padding(
                                             padding: const EdgeInsets.all(10.0),
@@ -223,7 +230,8 @@ class _dashboardState extends State<dashboard> {
                                               children: [
                                                 Icon(
                                                   Icons.settings,
-                                                  color: Color.fromRGBO(41, 89, 69, 1),
+                                                  color: Color.fromRGBO(
+                                                      41, 89, 69, 1),
                                                   size: 40.0,
                                                 ),
                                                 Text(
@@ -231,7 +239,8 @@ class _dashboardState extends State<dashboard> {
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
-                                                    color: Color.fromRGBO(41, 89, 69, 1),
+                                                    color: Color.fromRGBO(
+                                                        41, 89, 69, 1),
                                                   ),
                                                 ),
                                               ],
@@ -260,25 +269,25 @@ class _dashboardState extends State<dashboard> {
                             child: Center(
                               child: Padding(
                                 padding:
-                                const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                                    const EdgeInsets.fromLTRB(10, 20, 10, 0),
                                 child: Row(
                                   mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
                                           color:
-                                          Color.fromARGB(190, 134, 108, 1),
+                                              Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
                                             borderRadius:
-                                            BorderRadius.circular(30.0),
+                                                BorderRadius.circular(30.0),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               child: Container(
                                                 height: 200,
                                                 width: double.infinity,
@@ -303,15 +312,15 @@ class _dashboardState extends State<dashboard> {
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
                                           color:
-                                          Color.fromARGB(190, 134, 108, 1),
+                                              Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
                                             borderRadius:
-                                            BorderRadius.circular(30.0),
+                                                BorderRadius.circular(30.0),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               child: Container(
                                                 height: 200,
                                                 width: double.infinity,
@@ -323,7 +332,21 @@ class _dashboardState extends State<dashboard> {
                                                   ),
                                                 ),
                                                 child: Center(
-                                                  child: Text('My Card'),
+                                                  child: Padding(
+                                                    padding: const EdgeInsets.only(top: 150),
+                                                    child: Container(
+                                                      decoration: BoxDecoration(
+                                                        borderRadius: BorderRadius.circular(6),
+                                                        color: Colors.white,
+                                                      ),
+                                                        height: 50,
+                                                        alignment: Alignment
+                                                            .bottomCenter,
+
+                                                        child: Center(
+                                                            child:
+                                                                Text('My Card'))),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -339,32 +362,31 @@ class _dashboardState extends State<dashboard> {
                         ],
                       ),
 
-
                       Column(
                         children: [
                           Container(
                             child: Center(
                               child: Padding(
                                 padding:
-                                const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                                    const EdgeInsets.fromLTRB(10, 20, 10, 0),
                                 child: Row(
                                   mainAxisAlignment:
-                                  MainAxisAlignment.spaceBetween,
+                                      MainAxisAlignment.spaceBetween,
                                   children: [
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
                                           color:
-                                          Color.fromARGB(190, 134, 108, 1),
+                                              Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
                                             borderRadius:
-                                            BorderRadius.circular(30.0),
+                                                BorderRadius.circular(30.0),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               child: Container(
                                                 height: 200,
                                                 width: double.infinity,
@@ -389,15 +411,15 @@ class _dashboardState extends State<dashboard> {
                                         padding: const EdgeInsets.all(4.0),
                                         child: Card(
                                           color:
-                                          Color.fromARGB(190, 134, 108, 1),
+                                              Color.fromARGB(190, 134, 108, 1),
                                           margin: EdgeInsets.zero,
                                           elevation: 0,
                                           child: ClipRRect(
                                             borderRadius:
-                                            BorderRadius.circular(30.0),
+                                                BorderRadius.circular(30.0),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               child: Container(
                                                 height: 200,
                                                 width: double.infinity,
@@ -434,7 +456,7 @@ class _dashboardState extends State<dashboard> {
                               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                               child: Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Padding(
@@ -444,7 +466,7 @@ class _dashboardState extends State<dashboard> {
                                         elevation: 0,
                                         child: ClipRRect(
                                           borderRadius:
-                                          BorderRadius.circular(30.0),
+                                              BorderRadius.circular(30.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -460,7 +482,7 @@ class _dashboardState extends State<dashboard> {
                                     child: Card(
                                       child: ClipRRect(
                                         borderRadius:
-                                        BorderRadius.circular(15.0),
+                                            BorderRadius.circular(15.0),
                                         child: Container(
                                           height: 200,
                                           width: double.infinity,
@@ -486,7 +508,7 @@ class _dashboardState extends State<dashboard> {
                               padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                               child: Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Flexible(
                                     child: Padding(
@@ -496,7 +518,7 @@ class _dashboardState extends State<dashboard> {
                                         elevation: 0,
                                         child: ClipRRect(
                                           borderRadius:
-                                          BorderRadius.circular(30.0),
+                                              BorderRadius.circular(30.0),
                                           child: Container(
                                             height: 200,
                                             width: double.infinity,
@@ -512,7 +534,7 @@ class _dashboardState extends State<dashboard> {
                                     child: Card(
                                       child: ClipRRect(
                                         borderRadius:
-                                        BorderRadius.circular(15.0),
+                                            BorderRadius.circular(15.0),
                                         child: Container(
                                           height: 200,
                                           width: double.infinity,
