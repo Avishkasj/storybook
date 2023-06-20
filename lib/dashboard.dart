@@ -159,13 +159,13 @@ class _dashboardState extends State<dashboard> {
                                             child: Column(
                                               children: [
                                                 Icon(
-                                                  Icons.star_border_outlined,
+                                                  Icons.book,
                                                   color: Color.fromRGBO(
                                                       41, 89, 69, 1),
                                                   size: 40.0,
                                                 ),
                                                 Text(
-                                                  'Favorite',
+                                                  '   Books   ',
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
@@ -200,7 +200,7 @@ class _dashboardState extends State<dashboard> {
                                                   size: 40.0,
                                                 ),
                                                 Text(
-                                                  '  Audio  ',
+                                                  '    Audio    ',
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
@@ -235,7 +235,7 @@ class _dashboardState extends State<dashboard> {
                                                   size: 40.0,
                                                 ),
                                                 Text(
-                                                  'Settings',
+                                                  ' Settings ',
                                                   style: TextStyle(
                                                     fontSize: 18,
                                                     fontWeight: FontWeight.bold,
