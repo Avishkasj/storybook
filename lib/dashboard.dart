@@ -337,7 +337,7 @@ class _dashboardState extends State<dashboard> {
                                                     child: Container(
                                                       decoration: BoxDecoration(
                                                         borderRadius: BorderRadius.circular(6),
-                                                        color: Colors.white,
+                                                        color: Colors.brown[300],
                                                       ),
                                                         height: 50,
                                                         alignment: Alignment
