@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:storybook/ReadView.dart';
 
 class dashboard extends StatefulWidget {
   const dashboard({Key? key}) : super(key: key);
@@ -277,29 +278,48 @@ class _dashboardState extends State<dashboard> {
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
-                                        child: Card(
-                                          color:
-                                              Color.fromARGB(190, 134, 108, 1),
-                                          margin: EdgeInsets.zero,
-                                          elevation: 0,
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(30.0),
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
-                                              child: Container(
-                                                height: 200,
-                                                width: double.infinity,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                        'assets/img1.png'),
-                                                    fit: BoxFit.cover,
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            print("object");
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(builder: (context) => ReadView()),
+                                            );
+                                            // Handle the tap gesture here
+                                          },
+                                          child: Card(
+                                            color: Color.fromARGB(190, 134, 108, 1),
+                                            margin: EdgeInsets.zero,
+                                            elevation: 0,
+                                            child: ClipRRect(
+                                              borderRadius: BorderRadius.circular(30.0),
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Container(
+                                                  height: 200,
+                                                  width: double.infinity,
+                                                  decoration: BoxDecoration(
+                                                    image: DecorationImage(
+                                                      image: AssetImage('assets/img1.png'),
+                                                      fit: BoxFit.cover,
+                                                    ),
                                                   ),
-                                                ),
-                                                child: Center(
-                                                  child: Text('card 1'),
+                                                  child: Center(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.only(top: 150),
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          borderRadius: BorderRadius.circular(6),
+                                                          color: Colors.brown[300],
+                                                        ),
+                                                        height: 50,
+                                                        alignment: Alignment.bottomCenter,
+                                                        child: Center(
+                                                          child: Text('My Card'),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -310,42 +330,47 @@ class _dashboardState extends State<dashboard> {
                                     Flexible(
                                       child: Padding(
                                         padding: const EdgeInsets.all(4.0),
-                                        child: Card(
-                                          color:
-                                              Color.fromARGB(190, 134, 108, 1),
-                                          margin: EdgeInsets.zero,
-                                          elevation: 0,
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(30.0),
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
-                                              child: Container(
-                                                height: 200,
-                                                width: double.infinity,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                        'assets/img1.png'),
-                                                    fit: BoxFit.cover,
+                                        child: GestureDetector(
+                                          onTap: () {
+                                            print("object");
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(builder: (context) => ReadView()),
+                                            );
+                                            // Handle the tap gesture here
+                                          },
+                                          child: Card(
+                                            color: Color.fromARGB(190, 134, 108, 1),
+                                            margin: EdgeInsets.zero,
+                                            elevation: 0,
+                                            child: ClipRRect(
+                                              borderRadius: BorderRadius.circular(30.0),
+                                              child: Padding(
+                                                padding: const EdgeInsets.all(8.0),
+                                                child: Container(
+                                                  height: 200,
+                                                  width: double.infinity,
+                                                  decoration: BoxDecoration(
+                                                    image: DecorationImage(
+                                                      image: AssetImage('assets/img1.png'),
+                                                      fit: BoxFit.cover,
+                                                    ),
                                                   ),
-                                                ),
-                                                child: Center(
-                                                  child: Padding(
-                                                    padding: const EdgeInsets.only(top: 150),
-                                                    child: Container(
-                                                      decoration: BoxDecoration(
-                                                        borderRadius: BorderRadius.circular(6),
-                                                        color: Colors.brown[300],
-                                                      ),
+                                                  child: Center(
+                                                    child: Padding(
+                                                      padding: const EdgeInsets.only(top: 150),
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          borderRadius: BorderRadius.circular(6),
+                                                          color: Colors.brown[300],
+                                                        ),
                                                         height: 50,
-                                                        alignment: Alignment
-                                                            .bottomCenter,
-
+                                                        alignment: Alignment.bottomCenter,
                                                         child: Center(
-                                                            child:
-                                                                Text('My Card'))),
+                                                          child: Text('My Card'),
+                                                        ),
+                                                      ),
+                                                    ),
                                                   ),
                                                 ),
                                               ),
@@ -354,6 +379,7 @@ class _dashboardState extends State<dashboard> {
                                         ),
                                       ),
                                     ),
+
                                   ],
                                 ),
                               ),
