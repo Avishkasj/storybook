@@ -13,6 +13,7 @@ class _ReadViewState extends State<ReadView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor:Color.fromRGBO(47, 114, 100, 1),
       appBar: PreferredSize(
         preferredSize:
             Size.fromHeight(150), // Set the desired height for the app bar
@@ -43,17 +44,25 @@ class _ReadViewState extends State<ReadView> {
         child: SafeArea(
           child: Column(
             children: [
-              Container(
-                height: 800,
-                width: double.infinity,
-                // height: double.infinity,
-                color: Colors.brown,
-                child: Text(
-                  "data",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 800,
+                  width: double.infinity,
+                  // height: double.infinity,
+                  color: Colors.white,
+                  child: Padding(
+                    padding: const EdgeInsets.all(14.0),
+                    child: Text(
+                      "contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to                   "
+
+                          "them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields,                                                and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the    contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 22,
+                      ),
+                    ),
                   ),
                 ),
               )
