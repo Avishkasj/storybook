@@ -39,10 +39,28 @@ class _ReadViewState extends State<ReadView> {
           ),
         ),
       ),
-      body: Column(
-        children: [
-          Container(child: Text("data")),
-        ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            children: [
+              Container(
+                height: 800,
+                width: double.infinity,
+                // height: double.infinity,
+                color: Colors.brown,
+                child: Text(
+                  "data",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 20,
+                  ),
+                ),
+              )
+
+            ],
+          ),
+        ),
       ),
     );
   }
