@@ -8,15 +8,40 @@ class ReadView extends StatefulWidget {
 }
 
 class _ReadViewState extends State<ReadView> {
+  get toggleFilter => null;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(47, 114, 100, 1),
+      appBar: PreferredSize(
+        preferredSize:
+            Size.fromHeight(150), // Set the desired height for the app bar
+        child: AppBar(
+          actions: [
+            IconButton(
+              icon: Icon(
+                Icons.favorite,
+                color: Colors.white,
+              ),
+              onPressed: toggleFilter,
+            ),
+          ],
+          title: Center(child: Text("Title")),
+          backgroundColor: Colors.transparent, // Make the app bar transparent
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage(
+                    'assets/img2.png'), // Replace with your own image path
+                fit: BoxFit.cover,
+              ),
+            ),
+          ),
+        ),
       ),
       body: Column(
         children: [
-          Text("data"),
+          Container(child: Text("data")),
         ],
       ),
     );
