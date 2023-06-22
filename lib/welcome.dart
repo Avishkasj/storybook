@@ -3,7 +3,6 @@ import 'package:storybook/dashboard.dart';
 
 class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
-
   @override
   State<Welcome> createState() => _WelcomeState();
 }
