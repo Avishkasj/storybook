@@ -257,7 +257,51 @@ class _dashboardState extends State<dashboard> {
                           ),
                         ],
                       ),
+                      // Padding(
+                      //   padding: const EdgeInsets.fromLTRB(0, 20, 320, 0),
+                      //   child: Text(
+                      //     'NEW',
+                      //     style: TextStyle(
+                      //       color: Colors.white,
+                      //       fontSize: 16,
+                      //       fontWeight: FontWeight.bold,
+                      //     ),
+                      //   ),
+                      // ),
 
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 0, 15, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'New',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+
+                            Row(
+                              children: [
+                                Text(
+                                  'See all',
+                                  style: TextStyle(
+                                    color: Colors.green[200],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 6),
+                                  child: Icon(Icons.arrow_forward,color: Colors.green[200],size: 15,),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
                       filteredOptions,
                       // Add your book list or other widgets here
                       // Example:
@@ -266,344 +310,150 @@ class _dashboardState extends State<dashboard> {
                       // Text('Book 3'),
                       Column(
                         children: [
+                          SizedBox(height: 10),
                           Container(
-                            child: Center(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(10, 20, 10, 0),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Flexible(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(4.0),
-                                        child: GestureDetector(
-                                          onTap: () {
-                                            print("object");
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      ReadView()),
-                                            );
-                                            // Handle the tap gesture here
-                                          },
-                                          child: Card(
-                                            color: Color.fromARGB(
-                                                190, 134, 108, 1),
-                                            margin: EdgeInsets.zero,
-                                            elevation: 0,
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(30.0),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Container(
-                                                  height: 200,
-                                                  width: double.infinity,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      image: AssetImage(
-                                                          'assets/img1.png'),
-                                                      fit: BoxFit.cover,
-                                                    ),
-                                                  ),
-                                                  child: Center(
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsets.only(
-                                                              top: 150),
-                                                      child: Container(
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(6),
-                                                          color:
-                                                              Colors.brown[300],
-                                                        ),
-                                                        height: 50,
-                                                        alignment: Alignment
-                                                            .bottomCenter,
-                                                        child: Center(
-                                                          child:
-                                                              Text('My Card'),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Flexible(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(4.0),
-                                        child: GestureDetector(
-                                          onTap: () {
-                                            print("object");
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      ReadView()),
-                                            );
-                                            // Handle the tap gesture here
-                                          },
-                                          child: Card(
-                                            color: Color.fromARGB(
-                                                190, 134, 108, 1),
-                                            margin: EdgeInsets.zero,
-                                            elevation: 0,
-                                            child: ClipRRect(
-                                              borderRadius:
-                                                  BorderRadius.circular(30.0),
-                                              child: Padding(
-                                                padding:
-                                                    const EdgeInsets.all(8.0),
-                                                child: Container(
-                                                  height: 200,
-                                                  width: double.infinity,
-                                                  decoration: BoxDecoration(
-                                                    image: DecorationImage(
-                                                      image: AssetImage(
-                                                          'assets/img1.png'),
-                                                      fit: BoxFit.cover,
-                                                    ),
-                                                  ),
-                                                  child: Center(
-                                                    child: Padding(
-                                                      padding:
-                                                          const EdgeInsets.only(
-                                                              top: 150),
-                                                      child: Container(
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(6),
-                                                          color:
-                                                              Colors.brown[300],
-                                                        ),
-                                                        height: 50,
-                                                        alignment: Alignment
-                                                            .bottomCenter,
-                                                        child: Center(
-                                                          child:
-                                                              Text('My Card'),
-                                                        ),
-                                                      ),
-                                                    ),
-                                                  ),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
+                            height: 200,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                buildCard('Kind Bunny', Colors.red),
+                                buildCard('Red fish', Colors.green),
+                                buildCard('Hello trees', Colors.blue),
+                                buildCard('Card 4', Colors.orange),
+                                buildCard('Card 5', Colors.purple),
+                              ],
+                            ),
+                          ),
+                          // SizedBox(height: 150,),
+                        ],
+                      ),
+
+
+
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(20, 30, 15, 0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              'Featured',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
-                          )
-                        ],
+
+                            Row(
+                              children: [
+                                Text(
+                                  'See all',
+                                  style: TextStyle(
+                                    color: Colors.green[200],
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.only(left: 6),
+                                  child: Icon(Icons.arrow_forward,color: Colors.green[200],size: 15,),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
                       ),
 
                       Column(
                         children: [
+                          SizedBox(height: 10),
                           Container(
-                            child: Center(
-                              child: Padding(
-                                padding:
-                                    const EdgeInsets.fromLTRB(10, 20, 10, 0),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Flexible(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(4.0),
-                                        child: Card(
-                                          color:
-                                              Color.fromARGB(190, 134, 108, 1),
-                                          margin: EdgeInsets.zero,
-                                          elevation: 0,
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(30.0),
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
-                                              child: Container(
-                                                height: 200,
-                                                width: double.infinity,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                        'assets/img1.png'),
-                                                    fit: BoxFit.cover,
-                                                  ),
-                                                ),
-                                                child: Center(
-                                                  child: Text('card 1'),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Flexible(
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(4.0),
-                                        child: Card(
-                                          color:
-                                              Color.fromARGB(190, 134, 108, 1),
-                                          margin: EdgeInsets.zero,
-                                          elevation: 0,
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(30.0),
-                                            child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
-                                              child: Container(
-                                                height: 200,
-                                                width: double.infinity,
-                                                decoration: BoxDecoration(
-                                                  image: DecorationImage(
-                                                    image: AssetImage(
-                                                        'assets/img1.png'),
-                                                    fit: BoxFit.cover,
-                                                  ),
-                                                ),
-                                                child: Center(
-                                                  child: Text('My Card'),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
+                            height: 200,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                buildCard('Card 1', Colors.red),
+                                buildCard('Card 2', Colors.green),
+                                buildCard('Card 3', Colors.blue),
+                                buildCard('Card 4', Colors.orange),
+                                buildCard('Card 5', Colors.purple),
+                              ],
                             ),
-                          )
+                          ),
+                          // SizedBox(height: 150,),
                         ],
                       ),
-
-                      //row 3
 
                       Column(
                         children: [
-                          Center(
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(4.0),
-                                      child: Card(
-                                        margin: EdgeInsets.zero,
-                                        elevation: 0,
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(30.0),
-                                          child: Container(
-                                            height: 200,
-                                            width: double.infinity,
-                                            child: Center(
-                                              child: Text('My Card'),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Card(
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        child: Container(
-                                          height: 200,
-                                          width: double.infinity,
-                                          child: Center(
-                                            child: Text('My Card'),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
+                          SizedBox(height: 10),
+                          Container(
+                            height: 200,
+                            child: ListView(
+                              scrollDirection: Axis.horizontal,
+                              children: [
+                                buildCard('Card 1', Colors.red),
+                                buildCard('Card 2', Colors.green),
+                                buildCard('Card 3', Colors.blue),
+                                buildCard('Card 4', Colors.orange),
+                                buildCard('Card 5', Colors.purple),
+                              ],
                             ),
-                          )
+                          ),
+                          // SizedBox(height: 150,),
                         ],
                       ),
-                      //row 4
 
-                      Column(
-                        children: [
-                          Center(
-                            child: Padding(
-                              padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Flexible(
-                                    child: Padding(
-                                      padding: const EdgeInsets.all(4.0),
-                                      child: Card(
-                                        margin: EdgeInsets.zero,
-                                        elevation: 0,
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(30.0),
-                                          child: Container(
-                                            height: 200,
-                                            width: double.infinity,
-                                            child: Center(
-                                              child: Text('My Card'),
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                  Flexible(
-                                    child: Card(
-                                      child: ClipRRect(
-                                        borderRadius:
-                                            BorderRadius.circular(15.0),
-                                        child: Container(
-                                          height: 200,
-                                          width: double.infinity,
-                                          child: Center(
-                                            child: Text('My Card'),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
+                      // Column(
+                      //   children: [
+                      //     Center(
+                      //       child: Padding(
+                      //         padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                      //         child: Row(
+                      //           mainAxisAlignment:
+                      //               MainAxisAlignment.spaceBetween,
+                      //           children: [
+                      //             Flexible(
+                      //               child: Padding(
+                      //                 padding: const EdgeInsets.all(4.0),
+                      //                 child: Card(
+                      //                   margin: EdgeInsets.zero,
+                      //                   elevation: 0,
+                      //                   child: ClipRRect(
+                      //                     borderRadius:
+                      //                         BorderRadius.circular(30.0),
+                      //                     child: Container(
+                      //                       height: 200,
+                      //                       width: double.infinity,
+                      //                       child: Center(
+                      //                         child: Text('My Card'),
+                      //                       ),
+                      //                     ),
+                      //                   ),
+                      //                 ),
+                      //               ),
+                      //             ),
+                      //             Flexible(
+                      //               child: Card(
+                      //                 child: ClipRRect(
+                      //                   borderRadius:
+                      //                       BorderRadius.circular(15.0),
+                      //                   child: Container(
+                      //                     height: 200,
+                      //                     width: double.infinity,
+                      //                     child: Center(
+                      //                       child: Text('My Card'),
+                      //                     ),
+                      //                   ),
+                      //                 ),
+                      //               ),
+                      //             ),
+                      //           ],
+                      //         ),
+                      //       ),
+                      //     )
+                      //   ],
+                      // ),
                     ],
                   ),
                 ),
@@ -613,6 +463,56 @@ class _dashboardState extends State<dashboard> {
         ],
       ),
     );
+  }
+
+  Widget buildCard(String title, Color color) {
+    return Container(
+      width: 160,
+      margin: EdgeInsets.symmetric(horizontal: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Flexible(
+            child: Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Card(
+                color: Color.fromARGB(190, 134, 108, 1),
+                margin: EdgeInsets.zero,
+                elevation: 0,
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(30.0),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: 200,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/img1.png'),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                      child: Center(
+                        child: Text('$title'),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 5),
+            child: Text("$title",
+              textAlign: TextAlign.left,
+              style: TextStyle(
+              color: Colors.green[100],
+            ),),
+          ),
+        ],
+      ),
+    );
+
   }
 }
 
