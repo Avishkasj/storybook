@@ -47,15 +47,17 @@ class _ReadViewState extends State<ReadView> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
                   height: 800,
                   width: double.infinity,
                   // height: double.infinity,
-                  color: Colors.white,
                   child: Padding(
                     padding: const EdgeInsets.all(14.0),
                     child: Text(
                       "contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to                   "
-
                           "them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields,                                                and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the    contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the",
                       textAlign: TextAlign.center,
                       style: TextStyle(
