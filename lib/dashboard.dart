@@ -140,7 +140,7 @@ class _dashboardState extends State<dashboard> {
                             child: Center(
                               child: Padding(
                                 padding:
-                                    const EdgeInsets.fromLTRB(10, 10, 10, 0),
+                                    const EdgeInsets.fromLTRB(0, 10, 10, 0),
                                 child: Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
