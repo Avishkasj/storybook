@@ -462,6 +462,10 @@ class _dashboardState extends State<dashboard> {
           ),
         ],
       ),
+
+      bottomNavigationBar: BottomAppBar(
+        
+      ),
     );
   }
 
