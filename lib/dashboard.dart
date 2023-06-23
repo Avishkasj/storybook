@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:storybook/Allbook.dart';
 import 'package:storybook/ReadView.dart';
 
 class dashboard extends StatefulWidget {
@@ -284,14 +285,23 @@ class _dashboardState extends State<dashboard> {
                             ),
                             Row(
                               children: [
-                                Text(
-                                  'See all',
-                                  style: TextStyle(
-                                    color: Colors.green[200],
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold,
+                                GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) =>Allbook()),
+                                    );
+                                  },
+                                  child: Text(
+                                    'See all',
+                                    style: TextStyle(
+                                      color: Colors.green[200],
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
+
                                 Padding(
                                   padding: const EdgeInsets.only(left: 6),
                                   child: Icon(
@@ -319,7 +329,15 @@ class _dashboardState extends State<dashboard> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                buildCard('Kind Bunny', Colors.red),
+                                GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) => ReadView()),
+                                      );
+                                    },
+                                    child: buildCard('Kind Bunny', Colors.red)),
                                 buildCard('Red fish', Colors.green),
                                 buildCard('Hello trees', Colors.blue),
                                 buildCard('Hero gog', Colors.orange),
