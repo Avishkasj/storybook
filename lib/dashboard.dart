@@ -282,7 +282,6 @@ class _dashboardState extends State<dashboard> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-
                             Row(
                               children: [
                                 Text(
@@ -295,7 +294,11 @@ class _dashboardState extends State<dashboard> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 6),
-                                  child: Icon(Icons.arrow_forward,color: Colors.green[200],size: 15,),
+                                  child: Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.green[200],
+                                    size: 15,
+                                  ),
                                 ),
                               ],
                             ),
@@ -319,16 +322,14 @@ class _dashboardState extends State<dashboard> {
                                 buildCard('Kind Bunny', Colors.red),
                                 buildCard('Red fish', Colors.green),
                                 buildCard('Hello trees', Colors.blue),
-                                buildCard('Card 4', Colors.orange),
-                                buildCard('Card 5', Colors.purple),
+                                buildCard('Hero gog', Colors.orange),
+                                buildCard('challenging jurny', Colors.purple),
                               ],
                             ),
                           ),
                           // SizedBox(height: 150,),
                         ],
                       ),
-
-
 
                       Padding(
                         padding: const EdgeInsets.fromLTRB(20, 30, 15, 0),
@@ -343,7 +344,6 @@ class _dashboardState extends State<dashboard> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-
                             Row(
                               children: [
                                 Text(
@@ -356,7 +356,11 @@ class _dashboardState extends State<dashboard> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 6),
-                                  child: Icon(Icons.arrow_forward,color: Colors.green[200],size: 15,),
+                                  child: Icon(
+                                    Icons.arrow_forward,
+                                    color: Colors.green[200],
+                                    size: 15,
+                                  ),
                                 ),
                               ],
                             ),
@@ -372,11 +376,11 @@ class _dashboardState extends State<dashboard> {
                             child: ListView(
                               scrollDirection: Axis.horizontal,
                               children: [
-                                buildCard('Card 1', Colors.red),
-                                buildCard('Card 2', Colors.green),
-                                buildCard('Card 3', Colors.blue),
-                                buildCard('Card 4', Colors.orange),
-                                buildCard('Card 5', Colors.purple),
+                                buildCard('Kind Bunny', Colors.red),
+                                buildCard('Red fish', Colors.green),
+                                buildCard('Hello trees', Colors.blue),
+                                buildCard('Hero gog', Colors.orange),
+                                buildCard('challenging jurny', Colors.purple),
                               ],
                             ),
                           ),
@@ -462,10 +466,7 @@ class _dashboardState extends State<dashboard> {
           ),
         ],
       ),
-
-      bottomNavigationBar: BottomAppBar(
-        
-      ),
+      bottomNavigationBar: BottomAppBar(),
     );
   }
 
@@ -507,16 +508,17 @@ class _dashboardState extends State<dashboard> {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 5),
-            child: Text("$title",
+            child: Text(
+              "$title",
               textAlign: TextAlign.left,
               style: TextStyle(
-              color: Colors.green[100],
-            ),),
+                color: Colors.green[100],
+              ),
+            ),
           ),
         ],
       ),
     );
-
   }
 }
 
