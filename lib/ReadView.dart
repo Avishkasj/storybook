@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ReadView extends StatefulWidget {
   const ReadView({Key? key}) : super(key: key);
@@ -57,14 +58,16 @@ class _ReadViewState extends State<ReadView> {
                   child: Padding(
                     padding: const EdgeInsets.all(14.0),
                     child: Text(
-                      "contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to                   "
-                          "them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields,                                                and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the    contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the",
+                      "contain data and code A common feature of objects is that procedures are attached to them and can access and modify the    contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify the contain data and code. The data is in the form of fields, and the code is in the form of procedures. A common feature of objects is that procedures are attached to them and can access and modify th",
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 22,
+                      style: GoogleFonts.literata(
+                        textStyle: TextStyle(
+                          color: Colors.black,
+                          fontSize: 22,
+                        ),
                       ),
                     ),
+
                   ),
                 ),
               )
