@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "854553552531",
+    "project_id": "storybook-677dd",
+    "storage_bucket": "storybook-677dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854553552531:android:b204a40145fdf0e4200f66",
+        "android_client_info": {
+          "package_name": "com.example.storybook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854553552531-j7bd1iajv67cgq9cmr01daiaj60vm6m4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVANlsYllaDP7YX_NPtD3doJeh5wUdLT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854553552531-j7bd1iajv67cgq9cmr01daiaj60vm6m4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
