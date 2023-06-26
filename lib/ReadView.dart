@@ -14,7 +14,7 @@ class _ReadViewState extends State<ReadView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Color.fromRGBO(47, 114, 100, 1),
+      backgroundColor: Color.fromRGBO(47, 114, 100, 1),
       appBar: PreferredSize(
         preferredSize:
             Size.fromHeight(150), // Set the desired height for the app bar
@@ -67,11 +67,9 @@ class _ReadViewState extends State<ReadView> {
                         ),
                       ),
                     ),
-
                   ),
                 ),
               )
-
             ],
           ),
         ),
