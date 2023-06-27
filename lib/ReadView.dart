@@ -53,6 +53,10 @@ class _ReadViewState extends State<ReadView> {
                     color: Colors.white,
                   ),
                   height: 800,
+
+
+
+                  
                   width: double.infinity,
                   // height: double.infinity,
                   child: Padding(
